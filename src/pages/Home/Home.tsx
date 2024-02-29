@@ -1,5 +1,6 @@
 import NavBarComponent from "../../components/NavBarComponent";
 import { Button, Col, Container, Row } from "react-bootstrap";
+import Sobre from "../Sobre/Sobre";
 
 function Home() {
   return (
@@ -13,7 +14,11 @@ function Home() {
         style={{ marginTop: "20px" }}
         className="p-4"
       >
-        <Row className="align-items-center justify-content-center">
+        <Row
+          id="inicio"
+          className="align-items-center justify-content-center"
+          style={{ height: "90vh" }}
+        >
           <Col lg={6}>
             <div className="text-center">
               <h2>Bem-vindo ao Dev Piauí</h2>
@@ -31,6 +36,8 @@ function Home() {
             </div>
           </Col>
         </Row>
+
+        <Sobre></Sobre>
       </Container>
     </>
   );
