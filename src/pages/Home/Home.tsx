@@ -2,9 +2,9 @@ import NavBarComponent from "../../components/NavBarComponent";
 
 function Home() {
   return (
-    <div>
-        <NavBarComponent/>
-    </div>
+    <>
+    <NavBarComponent></NavBarComponent>
+    </>
   );
 }
 
