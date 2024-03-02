@@ -21,7 +21,9 @@ function NavBarComponent() {
     <>
       <Navbar style={NavBarComponentStyle} expand="lg">
         <Container>
-          <Navbar.Brand href="/">DEV PIAUÍ</Navbar.Brand>
+          <Navbar.Brand style={{ fontWeight: "bold" }} href="/">
+            DEV PIAUÍ
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
@@ -34,8 +36,18 @@ function NavBarComponent() {
               <Nav.Link onClick={() => scrollToSection("sobre")} href="#sobre">
                 Sobre
               </Nav.Link>
-              <Nav.Link onClick={() => scrollToSection("Portfolio")} href="#Portfolio">Portfólio</Nav.Link>
-              <Nav.Link onClick={() => scrollToSection("membros")} href="#membros">Equipe</Nav.Link>
+              <Nav.Link
+                onClick={() => scrollToSection("Portfolio")}
+                href="#Portfolio"
+              >
+                Portfólio
+              </Nav.Link>
+              <Nav.Link
+                onClick={() => scrollToSection("membros")}
+                href="#membros"
+              >
+                Equipe
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

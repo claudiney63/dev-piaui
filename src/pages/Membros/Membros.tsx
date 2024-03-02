@@ -66,7 +66,13 @@ function Membros() {
   return (
     <div id="membros" className="text-center" style={{ height: "100vh" }}>
       <h2>Equipe</h2>
-      <div style={{ display: "flex", justifyContent: "space-around" }}>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-around",
+          marginTop: "2rem",
+        }}
+      >
         <MemberCard
           name="Nome do Membro 1"
           imgSrc="https://cdn2.iconfinder.com/data/icons/devops-outline/60/Developer-dev-male-person-user-avatar-programmer-512.png"
