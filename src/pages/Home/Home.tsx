@@ -39,10 +39,13 @@ function Home() {
           </Col>
         </Row>
 
+        {/* Sobre */}
         <Sobre></Sobre>
 
+        {/* Portifolio */}
         <Portifolio></Portifolio>
 
+        {/* Membros */}
         <Membros></Membros>
 
       </Container>
