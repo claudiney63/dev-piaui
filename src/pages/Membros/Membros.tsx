@@ -15,7 +15,7 @@ function MemberCard({
   linkedin: string;
 }) {
   return (
-    <Card style={{ width: "18rem", border: "none" }}>
+    <Card style={{ width: "18rem", border: "none", marginTop: "1rem" }}>
       <Card.Body>
         <div style={{ textAlign: "center" }}>
           <div
@@ -70,7 +70,8 @@ function Membros() {
         style={{
           display: "flex",
           justifyContent: "space-around",
-          marginTop: "2rem",
+          flexWrap: "wrap",
+          marginTop: "1rem",
         }}
       >
         <MemberCard
