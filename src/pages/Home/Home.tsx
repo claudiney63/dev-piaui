@@ -2,6 +2,7 @@ import NavBarComponent from "../../components/NavBarComponent";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import Sobre from "../Sobre/Sobre";
 import Portifolio from "../Portifolio/Portifolio";
+import Membros from "../Membros/Membros";
 
 function Home() {
   return (
@@ -41,6 +42,9 @@ function Home() {
         <Sobre></Sobre>
 
         <Portifolio></Portifolio>
+
+        <Membros></Membros>
+
       </Container>
     </>
   );

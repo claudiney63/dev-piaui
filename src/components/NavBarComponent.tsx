@@ -34,8 +34,8 @@ function NavBarComponent() {
               <Nav.Link onClick={() => scrollToSection("sobre")} href="#sobre">
                 Sobre
               </Nav.Link>
-              <Nav.Link href="#portfolio">Portfólio</Nav.Link>
-              <Nav.Link href="#membros">Membros</Nav.Link>
+              <Nav.Link onClick={() => scrollToSection("Portfolio")} href="#Portfolio">Portfólio</Nav.Link>
+              <Nav.Link onClick={() => scrollToSection("membros")} href="#membros">Equipe</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

@@ -1,4 +1,4 @@
-import { Card, Button } from "react-bootstrap";
+import { Card, Button, Container, Row, Col } from "react-bootstrap";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 function ProjectCard({
@@ -15,37 +15,52 @@ function ProjectCard({
   deployLink: string;
 }) {
   return (
-    <Card style={{ width: "20rem", marginBottom: "20px" }}>
-      <Card.Img variant="top" src={image} />
-      <Card.Body>
-        <Card.Title>{name}</Card.Title>
-        <Card.Text>{description}</Card.Text>
-        <Button
-          variant="dark"
-          href={githubLink}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaGithub /> Github
-        </Button>
-        <Button
-          variant="success"
-          href={deployLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ marginLeft: "10px" }}
-        >
-          <FaExternalLinkAlt /> Deploy
-        </Button>
-      </Card.Body>
+    <Card style={{ marginBottom: "20px", width: "44rem", marginTop: "1rem" }}>
+      <Col style={{ height: "100%" }}>
+        <Row className="d-flex justify-content-center align-items-center">
+          <Card.Img
+            className="p-3"
+            variant="top"
+            src={image}
+            style={{ height: "22rem", width: "38rem" }}
+          />
+        </Row>
+        <Row className="d-flex flex-column justify-content-between">
+          <div>
+            <Card.Body>
+              <Card.Title>{name}</Card.Title>
+              <Card.Text>{description}</Card.Text>
+            </Card.Body>
+          </div>
+          <div className="d-flex justify-content-center align-items-center p-3">
+            <Button
+              variant="dark"
+              href={githubLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub /> Github
+            </Button>
+            <Button
+              variant="success"
+              href={deployLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ marginLeft: "10px" }}
+            >
+              <FaExternalLinkAlt /> Deploy
+            </Button>
+          </div>
+        </Row>
+      </Col>
     </Card>
   );
 }
 
 function Portifolio() {
   return (
-    <div className="text-center mb-4">
-      <h2 className="mb-4">Portifolio</h2>
+    <div id="Portfolio" className="text-center mb-4">
+      <h2 className="mb-4">Portfólio</h2>
       <div
         style={{
           display: "flex",
