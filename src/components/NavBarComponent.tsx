@@ -42,12 +42,12 @@ function NavBarComponent() {
               >
                 Portfólio
               </Nav.Link>
-              <Nav.Link
+              {/* <Nav.Link
                 onClick={() => scrollToSection("membros")}
                 href="#membros"
               >
                 Equipe
-              </Nav.Link>
+              </Nav.Link> */}
             </Nav>
           </Navbar.Collapse>
         </Container>
